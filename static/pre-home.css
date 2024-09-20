@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cursive', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fceabb, #f8b500);
+}
+
+.pre-home-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-circle {
+    width: 150px;
+    height: 150px;
+    background-color: #ffda79;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    animation: pulse 2s infinite;
+}
+
+.main-circle p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.play-icon {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: absolute;
+    opacity: 0;
+    animation: emerge 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+.circle p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+#music {
+    top: 20px;
+    left: 200px;
+    animation-delay: 0.6s;
+}
+
+#stats {
+    top: 200px;
+    left: 350px;
+    animation-delay: 0.7s;
+}
+
+#pdf {
+    top: 350px;
+    left: 200px;
+    animation-delay: 0.8s;
+}
+
+#quote {
+    top: 200px;
+    left: 50px;
+    animation-delay: 0.9s;
+}
+
+/* Animation for emerging circles */
+@keyframes emerge {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Pulsating animation for the main circle */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Hover effects */
+.main-circle:hover {
+    background-color: #ffd54f;
+}
+
+.circle:hover {
+    background-color: #ff3b3b;
+    transform: scale(1.1);
+}

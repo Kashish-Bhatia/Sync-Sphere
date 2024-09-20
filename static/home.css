@@ -1,0 +1,204 @@
+/* Reset and box-sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f3eceb;
+    background-image: url('https://www.transparenttextures.com/patterns/diamond-upholstery.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container and layout */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    color: #a37ca2;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Time Picker Styling */
+.time-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.time-picker select {
+    appearance: none;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    font-size: 1.2em;
+    margin: 0 5px;
+    background-color: #ffefef;
+    text-align: center;
+    width: 70px;
+    height: 40px;
+    outline: none;
+}
+
+.time-picker select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Timer Styling */
+.timer-card {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.card-flip {
+    background-color: #fef9f3;
+    border: 2px solid #ffd700;
+    border-radius: 12px;
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease-in-out;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.colon {
+    font-size: 3em;
+    line-height: 1;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Quote section */
+.quote {
+    background: #ffefef;
+    border: 1px solid #ffcccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+footer {
+    text-align: center;
+}
+
+#logout-btn {
+    background-color: #dc3545;
+}
+
+#logout-btn:hover {
+    background-color: #c82333;
+}
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background Image Wrapper */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:url('/static/lofi\ image.avif'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: blur(1px); /* Adjust the blur value as needed */
+}
+
+/* Container and Layout */
+.container {
+    max-width: 900px;
+    margin: 5% auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.Heading{
+    justify-content:center;
+    
+}
+.button-align-karnekeliye{
+    justify-content:center;
+    
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sync Sphere</title>
+    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-image"></div>
+
+    <div class="container">
+        <header>
+            <h1>Sync Sphere</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" title="Music"><i class="fas fa-music"></i> Music</a></li>
+                    <li><a href="stats.html" title="View Stats"><i class="fas fa-chart-line"></i> Stats</a></li>
+                    <li><a href="image-to-pdf.html" title="Image to PDF"><i class="fas fa-file-pdf"></i> PDF</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="pomodoro">
+                <h2 class="Heading">Pomodoro Timer</h2>
+
+                <!-- Time Picker with wheel effect -->
+                <div class="time-picker">
+                    <select id="hours"></select>
+                    <span>:</span>
+                    <select id="minutes"></select>
+                    <span>:</span>
+                    <select id="seconds"></select>
+                </div>
+
+                <!-- Timer card with flip effect -->
+                <div id="timer" class="timer-card">
+                    <div class="card-flip" id="minutes-card">25</div>
+                    <div class="colon">:</div>
+                    <div class="card-flip" id="seconds-card">00</div>
+                </div>
+                <div class="button-align-karnekeliye">
+                <button id="start-btn">Start</button>
+                <button id="reset-btn">Reset</button>
+                </div>
+
+            </section>
+
+            <section class="quote">
+                <h2>Quote of the Day</h2>
+                <p id="daily-quote">"Success is the sum of small efforts, repeated day in and day out."</p>
+            </section>
+        </main>
+
+        <footer>
+            <button id="logout-btn">Logout</button>
+        </footer>
+    </div>
+
+    <script src="/static/scipt.js"></script>
+</body>
+</html>
